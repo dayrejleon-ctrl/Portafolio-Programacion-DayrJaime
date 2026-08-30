@@ -1,53 +1,107 @@
-<!-- Sección de Formulario de Captura de Datos -->
-<section id="solicitud">
-    <h2>Solicitud de Servicios y Evaluación Fiscal</h2>
-    <p>Complete el siguiente formulario para evaluar sus necesidades contables o solicitudes de crédito profesional.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firma contable corporativa de Dayr Jaime. Asesoría, auditoría y soluciones financieras.">
+    <meta name="author" content="Dayr Jaime - Contaduría Pública">
+    <title>Dayr Jaime & Asociados | Consultoría Contable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <form action="#" method="POST" class="formulario-contacto">
-        
-        <!-- Campo: Nombre Completo -->
-        <div class="grupo-campo">
-            <label for="nombre">Nombre o Razón Social:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej. Corporación J&M, C.A." required minlength="3">
+    <!-- Encabezado con Enlaces Locales e Internos -->
+    <header>
+        <div class="logo">
+            <h1>Dayr Jaime & Asociados</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#solicitud">Solicitud</a></li>
+                <li><a href="#marcos-legales">Portales Oficiales</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Campo: Correo Electrónico -->
-        <div class="grupo-campo">
-            <label for="email">Correo Electrónico de Contacto:</label>
-            <input type="email" id="email" name="email" placeholder="cliente@empresa.com" required>
-        </div>
+    <main>
+        <!-- Sección de Formulario de Captura de Datos -->
+        <section id="solicitud">
+            <h2>Solicitud de Servicios y Evaluación Fiscal</h2>
+            <p>Complete el siguiente formulario para evaluar sus necesidades contables o solicitudes de crédito profesional.</p>
 
-        <!-- Menú Desplegable: Tipo de Servicio / Solicitud -->
-        <div class="grupo-campo">
-            <label for="servicio">Tipo de Solicitud:</label>
-            <select id="servicio" name="servicio" required>
-                <option value="" disabled selected>-- Seleccione una opción --</option>
-                <option value="auditoria">Auditoría Financiera Externa</option>
-                <option value="declaracion">Declaración y Planificación Fiscal</option>
-                <option value="credito">Evaluación de Solvencia / Solicitud de Crédito</option>
-                <option value="consultoria">Consultoría Administrativa General</option>
-            </select>
-        </div>
+            <form action="#" method="POST" class="formulario-contacto">
+                
+                <!-- Campo: Nombre Completo -->
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre o Razón Social:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Corporación J&M, C.A." required minlength="3">
+                </div>
 
-        <!-- Campo: RIF / Identificación Fiscal -->
-        <div class="grupo-campo">
-            <label for="rif">Número de RIF / ID Fiscal:</label>
-            <input type="text" id="rif" name="rif" placeholder="J-12345678-0" pattern="^[J|G|V|E]-[0-9]{8}-[0-9]{1}$" title="Formato requerido: J-12345678-0" required>
-        </div>
+                <!-- Campo: Correo Electrónico -->
+                <div class="grupo-campo">
+                    <label for="email">Correo Electrónico de Contacto:</label>
+                    <input type="email" id="email" name="email" placeholder="cliente@empresa.com" required>
+                </div>
 
-        <!-- Campo: Teléfono -->
-        <div class="grupo-campo">
-            <label for="telefono">Teléfono de Contacto:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="04141234567" pattern="[0-9]{11}" title="Ingrese 11 dígitos numéricos" required>
-        </div>
+                <!-- Menú Desplegable: Tipo de Servicio / Solicitud -->
+                <div class="grupo-campo">
+                    <label for="servicio">Tipo de Solicitud:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="" disabled selected>-- Seleccione una opción --</option>
+                        <option value="auditoria">Auditoría Financiera Externa</option>
+                        <option value="declaracion">Declaración y Planificación Fiscal</option>
+                        <option value="credito">Evaluación de Solvencia / Solicitud de Crédito</option>
+                        <option value="consultoria">Consultoría Administrativa General</option>
+                    </select>
+                </div>
 
-        <!-- Campo de Texto Complejo: Detalles -->
-        <div class="grupo-campo">
-            <label for="mensaje">Descripción de la Solicitud / Observaciones:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describa brevemente el estado contable actual o el requerimiento específico..."></textarea>
-        </div>
+                <!-- Campo: RIF / Identificación Fiscal -->
+                <div class="grupo-campo">
+                    <label for="rif">Número de RIF / ID Fiscal:</label>
+                    <input type="text" id="rif" name="rif" placeholder="J-12345678-0" pattern="^[J|G|V|E]-[0-9]{8}-[0-9]{1}$" title="Formato requerido: J-12345678-0" required>
+                </div>
 
-        <!-- Botón de Envío -->
-        <button type="submit" class="boton-enviar">Enviar Solicitud</button>
-    </form>
-</section>
+                <!-- Campo: Teléfono -->
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="04141234567" pattern="[0-9]{11}" title="Ingrese 11 dígitos numéricos" required>
+                </div>
+
+                <!-- Campo de Texto Complejo: Detalles -->
+                <div class="grupo-campo">
+                    <label for="mensaje">Descripción de la Solicitud / Observaciones:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describa brevemente el estado contable actual o el requerimiento específico..."></textarea>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" class="boton-enviar">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <hr class="divisor">
+
+        <!-- Sección de Enlaces Externos a Portales Oficiales -->
+        <section id="marcos-legales">
+            <h2>Portales de Control Fiscal y Aduanero</h2>
+            <ul class="lista-enlaces-externos">
+                <li>
+                    <a href="https://declaraciones.seniat.gob.ve" target="_blank" rel="noopener noreferrer">
+                        🌐 Portal SENIAT (Servicio Nacional Integrado de Administración Tributaria)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sudeban.gob.ve" target="_blank" rel="noopener noreferrer">
+                        🌐 SUDEBAN (Superintendencia de las Instituciones del Sector Bancario)
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dayr Jaime - Licenciatura en Contaduría Pública. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
