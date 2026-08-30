@@ -1,0 +1,58 @@
+/* ==========================================
+   ESTILOS DEL FORMULARIO DE CAPTURA
+   ========================================== */
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos de ancho completo (Textarea y Botón) */
+.grupo-campo:nth-child(6),
+.boton-enviar {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #1b365d;
+    font-size: 0.95rem;
+}
+
+input, select, textarea {
+    padding: 0.7rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #00a8cc;
+    box-shadow: 0 0 5px rgba(0, 168, 204, 0.3);
+}
+
+.boton-enviar {
+    background-color: #1b365d;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #00a8cc;
+}
