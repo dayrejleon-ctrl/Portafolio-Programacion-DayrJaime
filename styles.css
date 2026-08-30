@@ -1,4 +1,81 @@
 /* ==========================================
+   ESTILOS GENERALES Y RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f6f9;
+}
+
+/* ==========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ========================================== */
+header {
+    background-color: #1b365d;
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00a8cc;
+}
+
+/* ==========================================
+   CONTENIDO PRINCIPAL Y SECCIONES
+   ========================================== */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #1b365d;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00a8cc;
+    padding-bottom: 0.5rem;
+}
+
+.divisor {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 2.5rem 0;
+}
+
+/* ==========================================
    ESTILOS DEL FORMULARIO DE CAPTURA
    ========================================== */
 .formulario-contacto {
@@ -13,7 +90,6 @@
     flex-direction: column;
 }
 
-/* Campos de ancho completo (Textarea y Botón) */
 .grupo-campo:nth-child(6),
 .boton-enviar {
     grid-column: 1 / -1;
@@ -55,4 +131,35 @@ input:focus, select:focus, textarea:focus {
 
 .boton-enviar:hover {
     background-color: #00a8cc;
+}
+
+/* ==========================================
+   ENLACES EXTERNOS Y PIE DE PÁGINA
+   ========================================== */
+.lista-enlaces-externos {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.lista-enlaces-externos li {
+    margin-bottom: 0.8rem;
+}
+
+.lista-enlaces-externos a {
+    color: #1b365d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.lista-enlaces-externos a:hover {
+    color: #00a8cc;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1b365d;
+    color: #ffffff;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }
